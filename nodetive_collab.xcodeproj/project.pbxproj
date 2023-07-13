@@ -11,6 +11,7 @@
 		1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004C2A5FE00E00B7A823 /* ContentView.swift */; };
 		1405004F2A5FE01000B7A823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405004E2A5FE01000B7A823 /* Assets.xcassets */; };
 		140500522A5FE01000B7A823 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140500512A5FE01000B7A823 /* Preview Assets.xcassets */; };
+		5BD8B55D2A5FE8F2005E7EFD /* calendarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B55C2A5FE8F2005E7EFD /* calendarview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1405004C2A5FE00E00B7A823 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1405004E2A5FE01000B7A823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140500512A5FE01000B7A823 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BD8B55C2A5FE8F2005E7EFD /* calendarview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
+				5BD8B55C2A5FE8F2005E7EFD /* calendarview.swift */,
 				1405004E2A5FE01000B7A823 /* Assets.xcassets */,
 				140500502A5FE01000B7A823 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */,
+				5BD8B55D2A5FE8F2005E7EFD /* calendarview.swift in Sources */,
 				1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -45,8 +45,11 @@ struct CalendarView: View {
             Divider()
             
             Button("Edit Schedule") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                print("Button Tapped")
             }
+            .buttonStyle(.bordered)
+            .tint(Color.accentColor)
+            .foregroundColor(.white)
         }
         
         .padding(.vertical, 100)
