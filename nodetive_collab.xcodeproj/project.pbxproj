@@ -61,6 +61,9 @@
 		1405003E2A5FE00E00B7A823 = {
 			isa = PBXGroup;
 			children = (
+				59A0F7932A6048B70026527D /* Validate Variable */,
+				59A0F7832A6045DA0026527D /* Views */,
+				59A0F7942A60490A0026527D /* Model Data */,
 				140500492A5FE00E00B7A823 /* nodetive_collab */,
 				140500482A5FE00E00B7A823 /* Products */,
 			);
@@ -79,7 +82,6 @@
 			children = (
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
-				59A0F7832A6045DA0026527D /* Views */,
 				285590D32A6006BD006D99C9 /* Pageview.swift */,
 				59A0F7952A6049940026527D /* Data Controller.swift */,
 				285590CF2A600650006D99C9 /* introPage.swift */,
@@ -107,8 +109,6 @@
 				59A0F7972A604A400026527D /* ButtonView.swift */,
 				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
-				59A0F7942A60490A0026527D /* Model Data */,
-				59A0F7932A6048B70026527D /* Validate Variable */,
 			);
 			path = Views;
 			sourceTree = "<group>";
