@@ -28,7 +28,7 @@ struct ContentView: View {
             ProfileView()
                 .tabItem() {
                     Image(systemName: "person.circle")
-                    Text("Profileeee")
+                    Text("Profile")
                 }
         }
     }
