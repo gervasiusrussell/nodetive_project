@@ -19,6 +19,8 @@ struct CalendarView: View {
                 .padding()
             
             Spacer()
+                .frame(width: 0, height: 40)
+            
             ZStack {
                 RoundedRectangle(cornerRadius:10)
                     .stroke(.gray)
@@ -41,24 +43,30 @@ struct CalendarView: View {
                 .padding(.horizontal)
                 .datePickerStyle(.graphical)
                 .foregroundColor(Color.accentColor)
-                
-            Divider()
             
-            Button("Edit Schedule") {
-                print("Button Tapped")
+            Divider()
+            Spacer()
+                .frame(width: 0, height: 30)
+            
+            Button(action: {
+            }) {
+                Text("Edit Schedule")
+                    .font(.body)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(.accentColor)
+                    )
             }
-            .buttonStyle(.bordered)
-            .tint(Color.accentColor)
-            .foregroundColor(.white)
+            Spacer()
+                .frame(width: 0, height: 120)
         }
         
-        .padding(.vertical, 100)
-        .padding(.horizontal,5)
-        
-        
     }
-    
-    
+
 }
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
