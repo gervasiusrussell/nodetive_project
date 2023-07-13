@@ -14,7 +14,16 @@
 		285590D02A600650006D99C9 /* introPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590CF2A600650006D99C9 /* introPage.swift */; };
 		285590D22A6006A1006D99C9 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590D12A6006A1006D99C9 /* IntroView.swift */; };
 		285590D42A6006BD006D99C9 /* Pageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590D32A6006BD006D99C9 /* Pageview.swift */; };
-		5BD8B55D2A5FE8F2005E7EFD /* calendarview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B55C2A5FE8F2005E7EFD /* calendarview.swift */; };
+		59A0F7852A6046120026527D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7842A6046120026527D /* OverlayView.swift */; };
+		59A0F7872A6046210026527D /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7862A6046210026527D /* ScheduleView.swift */; };
+		59A0F7892A60462F0026527D /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7882A60462F0026527D /* ScheduleListView.swift */; };
+		59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F78A2A60464F0026527D /* AddScheduleView.swift */; };
+		59A0F78E2A6047860026527D /* Nodetive Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F78C2A6047860026527D /* Nodetive Data.xcdatamodeld */; };
+		59A0F7902A6048930026527D /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F78F2A6048930026527D /* Schedule.swift */; };
+		59A0F7922A6048A70026527D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7912A6048A70026527D /* Level.swift */; };
+		59A0F7962A6049940026527D /* Data Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7952A6049940026527D /* Data Controller.swift */; };
+		59A0F7982A604A400026527D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7972A604A400026527D /* ButtonView.swift */; };
+		5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +35,16 @@
 		285590CF2A600650006D99C9 /* introPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introPage.swift; sourceTree = "<group>"; };
 		285590D12A6006A1006D99C9 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		285590D32A6006BD006D99C9 /* Pageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageview.swift; sourceTree = "<group>"; };
-		5BD8B55C2A5FE8F2005E7EFD /* calendarview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarview.swift; sourceTree = "<group>"; };
+		59A0F7842A6046120026527D /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		59A0F7862A6046210026527D /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		59A0F7882A60462F0026527D /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
+		59A0F78A2A60464F0026527D /* AddScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleView.swift; sourceTree = "<group>"; };
+		59A0F78D2A6047860026527D /* Nodetive Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Nodetive Data.xcdatamodel"; sourceTree = "<group>"; };
+		59A0F78F2A6048930026527D /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		59A0F7912A6048A70026527D /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		59A0F7952A6049940026527D /* Data Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Controller.swift"; sourceTree = "<group>"; };
+		59A0F7972A604A400026527D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +79,10 @@
 			children = (
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
-				5BD8B55C2A5FE8F2005E7EFD /* calendarview.swift */,
-				285590CF2A600650006D99C9 /* introPage.swift */,
-				285590D12A6006A1006D99C9 /* IntroView.swift */,
+				59A0F7832A6045DA0026527D /* Views */,
 				285590D32A6006BD006D99C9 /* Pageview.swift */,
+				59A0F7952A6049940026527D /* Data Controller.swift */,
+				285590CF2A600650006D99C9 /* introPage.swift */,
 				1405004E2A5FE01000B7A823 /* Assets.xcassets */,
 				140500502A5FE01000B7A823 /* Preview Content */,
 			);
@@ -77,6 +95,39 @@
 				140500512A5FE01000B7A823 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59A0F7832A6045DA0026527D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59A0F78A2A60464F0026527D /* AddScheduleView.swift */,
+				5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */,
+				285590D12A6006A1006D99C9 /* IntroView.swift */,
+				59A0F7842A6046120026527D /* OverlayView.swift */,
+				59A0F7972A604A400026527D /* ButtonView.swift */,
+				59A0F7862A6046210026527D /* ScheduleView.swift */,
+				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
+				59A0F7942A60490A0026527D /* Model Data */,
+				59A0F7932A6048B70026527D /* Validate Variable */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59A0F7932A6048B70026527D /* Validate Variable */ = {
+			isa = PBXGroup;
+			children = (
+				59A0F7912A6048A70026527D /* Level.swift */,
+				59A0F78F2A6048930026527D /* Schedule.swift */,
+			);
+			path = "Validate Variable";
+			sourceTree = "<group>";
+		};
+		59A0F7942A60490A0026527D /* Model Data */ = {
+			isa = PBXGroup;
+			children = (
+				59A0F78C2A6047860026527D /* Nodetive Data.xcdatamodeld */,
+			);
+			path = "Model Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +200,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A0F7922A6048A70026527D /* Level.swift in Sources */,
+				59A0F7892A60462F0026527D /* ScheduleListView.swift in Sources */,
+				59A0F7982A604A400026527D /* ButtonView.swift in Sources */,
 				1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */,
-				5BD8B55D2A5FE8F2005E7EFD /* calendarview.swift in Sources */,
+				5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */,
+				59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */,
+				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
+				59A0F7902A6048930026527D /* Schedule.swift in Sources */,
 				285590D42A6006BD006D99C9 /* Pageview.swift in Sources */,
+				59A0F7872A6046210026527D /* ScheduleView.swift in Sources */,
+				59A0F7962A6049940026527D /* Data Controller.swift in Sources */,
+				59A0F78E2A6047860026527D /* Nodetive Data.xcdatamodeld in Sources */,
 				1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */,
 				285590D02A600650006D99C9 /* introPage.swift in Sources */,
 			);
@@ -355,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59A0F78C2A6047860026527D /* Nodetive Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				59A0F78D2A6047860026527D /* Nodetive Data.xcdatamodel */,
+			);
+			currentVersion = 59A0F78D2A6047860026527D /* Nodetive Data.xcdatamodel */;
+			path = "Nodetive Data.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1405003F2A5FE00E00B7A823 /* Project object */;
 }
