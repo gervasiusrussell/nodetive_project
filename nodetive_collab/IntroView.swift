@@ -91,7 +91,13 @@ struct IntroView: View {
                             Spacer()
                                 .frame(width: 0, height: 30)
                             
-                            Text("--------------- Or ---------------")
+                            HStack {
+                                Rectangle()
+                                    .frame(width: 130, height: 1)
+                                Text("Or")
+                                Rectangle()
+                                    .frame(width: 130, height: 1)
+                            }
                             
                             Spacer()
                                 .frame(width: 0, height: 30)
@@ -100,15 +106,15 @@ struct IntroView: View {
                                 goToZero()
                             }) {
                                 Text("Sign Up")
-                                }
-                                .frame(width: 100, height: 40)
-                                .background(Color(red: 1.0, green: 0.87, blue: 0.87))
-                                .foregroundColor(.black)
-                                .cornerRadius(20)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .stroke(Color.black, lineWidth: 2))
                             }
+                            .frame(width: 100, height: 40)
+                            .background(Color(red: 1.0, green: 0.87, blue: 0.87))
+                            .foregroundColor(.black)
+                            .cornerRadius(20)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.black, lineWidth: 2))
+                        }
                         Spacer()
                             .frame(width: 0, height: 30)
                         
