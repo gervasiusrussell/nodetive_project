@@ -86,9 +86,9 @@
 		140500492A5FE00E00B7A823 /* nodetive_collab */ = {
 			isa = PBXGroup;
 			children = (
+				59A0F79D2A60509A0026527D /* ProfileView.swift */,
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
-				59A0F79D2A60509A0026527D /* ProfileView.swift */,
 				59A0F7992A6050270026527D /* HomeView.swift */,
 				59A0F79B2A6050840026527D /* OverviewView.swift */,
 				285590D32A6006BD006D99C9 /* Pageview.swift */,
