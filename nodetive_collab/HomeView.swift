@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack {
             HStack{
@@ -30,7 +30,7 @@ struct ContentView: View {
                         )}
                 
                 Button(action:/*Input action*/ {
-                    Checkpage()
+                   // Checkpage()
                 }) {
                     Image(systemName: "person.crop.circle")
                         .resizable()
@@ -146,7 +146,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
