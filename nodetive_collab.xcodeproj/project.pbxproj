@@ -31,6 +31,7 @@
 		59A0F79A2A6050270026527D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7992A6050270026527D /* HomeView.swift */; };
 		59A0F79C2A6050840026527D /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79B2A6050840026527D /* OverviewView.swift */; };
 		59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79D2A60509A0026527D /* ProfileView.swift */; };
+		5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */; };
 		5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		59A0F7992A6050270026527D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		59A0F79B2A6050840026527D /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		59A0F79D2A60509A0026527D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPage.swift; sourceTree = "<group>"; };
 		5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
 				59A0F79D2A60509A0026527D /* ProfileView.swift */,
+				5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */,
 				59A0F7992A6050270026527D /* HomeView.swift */,
 				59A0F79B2A6050840026527D /* OverviewView.swift */,
 				285590D32A6006BD006D99C9 /* Pageview.swift */,
@@ -243,6 +246,7 @@
 				1405005D2A6148A300B7A823 /* QuestionView2.swift in Sources */,
 				140500602A6152A200B7A823 /* QuestionView3.swift in Sources */,
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
+				5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
 				59A0F7902A6048930026527D /* Schedule.swift in Sources */,
 				285590D42A6006BD006D99C9 /* Pageview.swift in Sources */,
