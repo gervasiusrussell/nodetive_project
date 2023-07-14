@@ -58,6 +58,7 @@ struct HomeView: View {
             
             Text("RUSSEL'S ACTIVITY")
                 .font(.system(size: 30,weight: .medium, design: .rounded ))
+            Text("00.00")
             ZStack {
                 Rectangle()
                     .frame(width: 2, height: 300) // Garis timeline
@@ -77,6 +78,7 @@ struct HomeView: View {
                     }
                 }
             }
+            Text("23.59")
             
             Spacer()
                 .frame(width: 0, height: 20)
