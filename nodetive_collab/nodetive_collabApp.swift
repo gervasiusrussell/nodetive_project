@@ -11,7 +11,7 @@ import SwiftUI
 struct nodetive_collabApp: App {
     var body: some Scene {
         WindowGroup {
-            CalendarView()
+            ContentView()
         }
     }
 }
