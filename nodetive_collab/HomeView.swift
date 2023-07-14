@@ -58,25 +58,25 @@ struct HomeView: View {
             
             Text("RUSSEL'S ACTIVITY")
                 .font(.system(size: 30,weight: .medium, design: .rounded ))
-        
-                ZStack {
-                        Rectangle()
-                            .frame(width: 2, height: 300) // Garis timeline
-                        HStack{
-                            Spacer()
-                                .frame(height: 50)
-                            Circle()
-                                .frame(width: 50, height:50)
-                                .foregroundColor(.accentColor)
-                                .overlay(
-                                    Image(systemName: "plus.circle")
-                                        .resizable()
-                                        .foregroundColor(.black)
-                                        .frame(width: 50, height:50)
-                                )
-                            
-                        }
+            ZStack {
+                Rectangle()
+                    .frame(width: 2, height: 300) // Garis timeline
+                HStack{
+                    Spacer()
+                    VStack {
+                        Spacer()
+                        Circle()
+                            .frame(width: 100, height:50)
+                            .foregroundColor(.accentColor)
+                            .overlay(
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .foregroundColor(.black)
+                                    .frame(width: 50, height:50)
+                            )
+                    }
                 }
+            }
             
             Spacer()
                 .frame(width: 0, height: 20)
