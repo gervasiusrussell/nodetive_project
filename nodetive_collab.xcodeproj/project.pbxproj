@@ -19,6 +19,7 @@
 		285590D02A600650006D99C9 /* introPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590CF2A600650006D99C9 /* introPage.swift */; };
 		285590D22A6006A1006D99C9 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590D12A6006A1006D99C9 /* IntroView.swift */; };
 		285590D42A6006BD006D99C9 /* Pageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590D32A6006BD006D99C9 /* Pageview.swift */; };
+		285590E02A644F73006D99C9 /* QuestionResult5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590DF2A644F73006D99C9 /* QuestionResult5.swift */; };
 		59A0F7852A6046120026527D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7842A6046120026527D /* OverlayView.swift */; };
 		59A0F7872A6046210026527D /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7862A6046210026527D /* ScheduleView.swift */; };
 		59A0F7892A60462F0026527D /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7882A60462F0026527D /* ScheduleListView.swift */; };
@@ -48,6 +49,7 @@
 		285590CF2A600650006D99C9 /* introPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introPage.swift; sourceTree = "<group>"; };
 		285590D12A6006A1006D99C9 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		285590D32A6006BD006D99C9 /* Pageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageview.swift; sourceTree = "<group>"; };
+		285590DF2A644F73006D99C9 /* QuestionResult5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResult5.swift; sourceTree = "<group>"; };
 		59A0F7842A6046120026527D /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		59A0F7862A6046210026527D /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		59A0F7882A60462F0026527D /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				140500612A61561C00B7A823 /* QuestionView4.swift */,
 				140500632A6157EF00B7A823 /* QuestionView5.swift */,
 				1405005A2A6133E000B7A823 /* QuestionView.swift */,
+				285590DF2A644F73006D99C9 /* QuestionResult5.swift */,
 			);
 			path = QuestionView;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				59A0F79A2A6050270026527D /* HomeView.swift in Sources */,
 				1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */,
 				285590D02A600650006D99C9 /* introPage.swift in Sources */,
+				285590E02A644F73006D99C9 /* QuestionResult5.swift in Sources */,
 				59A0F79C2A6050840026527D /* OverviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
