@@ -223,7 +223,8 @@ struct SignUpView: View {
                     
                     Button(action: {
                     }) {
-                        (Text("Sign In"))
+                        NavigationLink(destination: SignInView()){
+                            Text("Sign In")}
                             .fontWeight(.medium)
                             .foregroundColor(Color("Pinky4"))
                         

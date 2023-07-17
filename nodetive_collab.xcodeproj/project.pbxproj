@@ -44,6 +44,7 @@
 		5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */; };
 		5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF7462A654D57009B1069 /* SignUpView.swift */; };
 		5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF74A2A654F11009B1069 /* ButtonView2.swift */; };
+		5B5EF74D2A6556A1009B1069 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF74C2A6556A1009B1069 /* SignInView.swift */; };
 		5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPage.swift; sourceTree = "<group>"; };
 		5B5EF7462A654D57009B1069 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5B5EF74A2A654F11009B1069 /* ButtonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView2.swift; sourceTree = "<group>"; };
+		5B5EF74C2A6556A1009B1069 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 				5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */,
 				285590D12A6006A1006D99C9 /* IntroView.swift */,
 				5B5EF7462A654D57009B1069 /* SignUpView.swift */,
+				5B5EF74C2A6556A1009B1069 /* SignInView.swift */,
 				59A0F7842A6046120026527D /* OverlayView.swift */,
 				59A0F7972A604A400026527D /* ButtonView.swift */,
 				5B5EF74A2A654F11009B1069 /* ButtonView2.swift */,
@@ -287,6 +290,7 @@
 				140500602A6152A200B7A823 /* QuestionView3.swift in Sources */,
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
 				59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */,
+				5B5EF74D2A6556A1009B1069 /* SignInView.swift in Sources */,
 				5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
 				077C95892A651D1C007E294D /* NotificationView.swift in Sources */,
