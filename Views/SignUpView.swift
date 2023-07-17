@@ -216,10 +216,10 @@ struct SignUpView: View {
                             .frame(width: 130)
                             .background(RoundedRectangle(cornerRadius:35)
                                 .fill(Color("Pinky3"))))
-                } .padding(.bottom)
+                }
                 
                 HStack{
-                    Text("Already have Account?")
+                    Text("Already have account?")
                     
                     Button(action: {
                     }) {
