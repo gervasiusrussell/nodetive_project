@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077C95892A651D1C007E294D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C95882A651D1C007E294D /* NotificationView.swift */; };
 		1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */; };
 		1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004C2A5FE00E00B7A823 /* ContentView.swift */; };
 		1405004F2A5FE01000B7A823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405004E2A5FE01000B7A823 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		077C95882A651D1C007E294D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		140500472A5FE00E00B7A823 /* nodetive_collab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nodetive_collab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nodetive_collabApp.swift; sourceTree = "<group>"; };
 		1405004C2A5FE00E00B7A823 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				59A0F7972A604A400026527D /* ButtonView.swift */,
 				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
+				077C95882A651D1C007E294D /* NotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */,
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
+				077C95892A651D1C007E294D /* NotificationView.swift in Sources */,
 				59A0F7902A6048930026527D /* Schedule.swift in Sources */,
 				285590D42A6006BD006D99C9 /* Pageview.swift in Sources */,
 				59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */,
