@@ -145,7 +145,7 @@ struct OverlayView: View {
                     }
                     
                     Spacer()
-                        .frame(width: 0, height: -10)
+                        .frame(width: 0, height: 0)
                     
                     VStack {
                         RoundedRectangle(cornerRadius: 5)
@@ -159,7 +159,7 @@ struct OverlayView: View {
                 }
                 
                 Spacer()
-                    .frame(width: 0, height: 120)
+                    .frame(width: 0, height: 80)
                 
                 VStack{
                     Button(action:{

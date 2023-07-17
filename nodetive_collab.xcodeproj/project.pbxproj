@@ -139,11 +139,11 @@
 		1405005E2A6148C900B7A823 /* QuestionView */ = {
 			isa = PBXGroup;
 			children = (
+				1405005A2A6133E000B7A823 /* QuestionView.swift */,
 				1405005C2A6148A300B7A823 /* QuestionView2.swift */,
 				1405005F2A6152A200B7A823 /* QuestionView3.swift */,
 				140500612A61561C00B7A823 /* QuestionView4.swift */,
 				140500632A6157EF00B7A823 /* QuestionView5.swift */,
-				1405005A2A6133E000B7A823 /* QuestionView.swift */,
 				285590E72A651569006D99C9 /* QuestionResult1.swift */,
 				285590E92A65157D006D99C9 /* QuestionResult2.swift */,
 				285590EB2A6515A9006D99C9 /* QuestionResult3.swift */,
