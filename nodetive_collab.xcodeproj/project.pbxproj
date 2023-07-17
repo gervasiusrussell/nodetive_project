@@ -11,7 +11,6 @@
 		1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004C2A5FE00E00B7A823 /* ContentView.swift */; };
 		1405004F2A5FE01000B7A823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405004E2A5FE01000B7A823 /* Assets.xcassets */; };
 		140500522A5FE01000B7A823 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140500512A5FE01000B7A823 /* Preview Assets.xcassets */; };
-		1405005B2A6133E000B7A823 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405005A2A6133E000B7A823 /* QuestionView.swift */; };
 		1405005D2A6148A300B7A823 /* QuestionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405005C2A6148A300B7A823 /* QuestionView2.swift */; };
 		140500602A6152A200B7A823 /* QuestionView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405005F2A6152A200B7A823 /* QuestionView3.swift */; };
 		140500622A61561C00B7A823 /* QuestionView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140500612A61561C00B7A823 /* QuestionView4.swift */; };
@@ -20,6 +19,9 @@
 		285590D22A6006A1006D99C9 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590D12A6006A1006D99C9 /* IntroView.swift */; };
 		285590D42A6006BD006D99C9 /* Pageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590D32A6006BD006D99C9 /* Pageview.swift */; };
 		285590E02A644F73006D99C9 /* QuestionResult5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590DF2A644F73006D99C9 /* QuestionResult5.swift */; };
+		285590E22A645C23006D99C9 /* QuestionVieww.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590E12A645C23006D99C9 /* QuestionVieww.swift */; };
+		285590E42A645CA4006D99C9 /* QuestionResult1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590E32A645CA4006D99C9 /* QuestionResult1.swift */; };
+		285590E62A64639C006D99C9 /* QuestionResult2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590E52A64639C006D99C9 /* QuestionResult2.swift */; };
 		59A0F7852A6046120026527D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7842A6046120026527D /* OverlayView.swift */; };
 		59A0F7872A6046210026527D /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7862A6046210026527D /* ScheduleView.swift */; };
 		59A0F7892A60462F0026527D /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7882A60462F0026527D /* ScheduleListView.swift */; };
@@ -41,7 +43,6 @@
 		1405004C2A5FE00E00B7A823 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1405004E2A5FE01000B7A823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140500512A5FE01000B7A823 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1405005A2A6133E000B7A823 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		1405005C2A6148A300B7A823 /* QuestionView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionView2.swift; path = QuestionView/QuestionView2.swift; sourceTree = SOURCE_ROOT; };
 		1405005F2A6152A200B7A823 /* QuestionView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView3.swift; sourceTree = "<group>"; };
 		140500612A61561C00B7A823 /* QuestionView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView4.swift; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		285590D12A6006A1006D99C9 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		285590D32A6006BD006D99C9 /* Pageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageview.swift; sourceTree = "<group>"; };
 		285590DF2A644F73006D99C9 /* QuestionResult5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResult5.swift; sourceTree = "<group>"; };
+		285590E12A645C23006D99C9 /* QuestionVieww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVieww.swift; sourceTree = "<group>"; };
+		285590E32A645CA4006D99C9 /* QuestionResult1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResult1.swift; sourceTree = "<group>"; };
+		285590E52A64639C006D99C9 /* QuestionResult2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResult2.swift; sourceTree = "<group>"; };
 		59A0F7842A6046120026527D /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		59A0F7862A6046210026527D /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		59A0F7882A60462F0026527D /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
@@ -128,7 +132,9 @@
 				1405005F2A6152A200B7A823 /* QuestionView3.swift */,
 				140500612A61561C00B7A823 /* QuestionView4.swift */,
 				140500632A6157EF00B7A823 /* QuestionView5.swift */,
-				1405005A2A6133E000B7A823 /* QuestionView.swift */,
+				285590E12A645C23006D99C9 /* QuestionVieww.swift */,
+				285590E32A645CA4006D99C9 /* QuestionResult1.swift */,
+				285590E52A64639C006D99C9 /* QuestionResult2.swift */,
 				285590DF2A644F73006D99C9 /* QuestionResult5.swift */,
 			);
 			path = QuestionView;
@@ -241,17 +247,19 @@
 				140500642A6157EF00B7A823 /* QuestionView5.swift in Sources */,
 				1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */,
 				5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */,
-				1405005B2A6133E000B7A823 /* QuestionView.swift in Sources */,
 				59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */,
 				1405005D2A6148A300B7A823 /* QuestionView2.swift in Sources */,
+				285590E42A645CA4006D99C9 /* QuestionResult1.swift in Sources */,
 				140500602A6152A200B7A823 /* QuestionView3.swift in Sources */,
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
 				59A0F7902A6048930026527D /* Schedule.swift in Sources */,
 				285590D42A6006BD006D99C9 /* Pageview.swift in Sources */,
 				59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */,
+				285590E62A64639C006D99C9 /* QuestionResult2.swift in Sources */,
 				59A0F7872A6046210026527D /* ScheduleView.swift in Sources */,
 				59A0F7962A6049940026527D /* Data Controller.swift in Sources */,
+				285590E22A645C23006D99C9 /* QuestionVieww.swift in Sources */,
 				59A0F78E2A6047860026527D /* Nodetive Data.xcdatamodeld in Sources */,
 				140500622A61561C00B7A823 /* QuestionView4.swift in Sources */,
 				59A0F79A2A6050270026527D /* HomeView.swift in Sources */,

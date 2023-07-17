@@ -1,13 +1,13 @@
 //
-//  QuestionResult5.swift
+//  QuestionResult2.swift
 //  nodetive_collab
 //
-//  Created by Jennifer Marcellyn Cen on 16/07/23.
+//  Created by Jennifer Marcellyn Cen on 17/07/23.
 //
 
 import SwiftUI
 
-struct QuestionResult5: View {
+struct QuestionResult2: View {
     var body: some View {
         NavigationView {
             VStack {
@@ -16,22 +16,22 @@ struct QuestionResult5: View {
                     .bold()
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(LinearGradient(gradient: Gradient(colors: [Color(red: 1.00, green: 0.91, blue: 0.77), Color.white]), startPoint: .top, endPoint: .bottom))
+                        .fill(LinearGradient(gradient: Gradient(colors: [Color(red: 1.00, green: 0.65, blue: 0.65), Color.white]), startPoint: .top, endPoint: .bottom))
                         .frame(width: 400, height: 700)
                     VStack {
                         HStack {
                             Spacer()
                                 .frame(width: 5, height: 0)
-                            Image("trophy")
+                            Image("briefcase")
                                 .resizable()
                                 .frame(width: 50, height: 50)
-                            Text("Supreme Hustler")
+                            Text("Risk Explorer")
                                 .font(.system(size: 20, weight: .heavy))
                                 .padding()
                             Button(action: {
                                 // Action for the button
                             }) {
-                                NavigationLink(destination: HomeView()) {
+                                NavigationLink(destination: QuestionResult1()) {
                                     Image("minus")
                                         .resizable()
                                         .frame(width: 30, height: 30)
@@ -41,7 +41,7 @@ struct QuestionResult5: View {
                                 // Action for the button
                             }) {
                                 NavigationLink(destination: HomeView()) {
-                                    Text("5/5")
+                                    Text("2/5")
                                         .font(.system(size: 14))
                                         .foregroundColor(.black)
                                     
@@ -57,13 +57,15 @@ struct QuestionResult5: View {
                                 }
                             }
                         }
-                        Spacer()
-                            .frame(width: 0, height: 5)
-                        Text("\"Supreme Hustler\" is a transformative productivity approach that empowers individuals to maximize their output and achieve their goals with unmatched efficiency. By embracing the \"Supreme Hustler\" mindset, you'll work smarter, set clear objectives, and execute tasks with speed and precision. ")
-                            .multilineTextAlignment(.leading)
-                            .frame(width: 355, height: 165)
-                            .padding(.top, 20)
-                        Image("supremechart")
+                        VStack(alignment: .center) {
+                            Spacer()
+                                .frame(width: 0, height: 5)
+                            Text("With \"Risk Explorer\" mindset, you fearlessly navigate uncharted territories and venture into new possibilities. The \"Risk Explorer\" mindset empowers you to embrace change, adapt swiftly, and thrive amidst uncertainty, ultimately propelling you to new heights of productivity, success, and fulfillment.")
+                                .multilineTextAlignment(.leading)
+                                .frame(width: 355, height: 165)
+                                .padding(.top, 20)
+                        }
+                        Image("riskchart")
                             .resizable()
                             .frame(width: 300, height: 300)
                         Button(action: {
@@ -83,7 +85,7 @@ struct QuestionResult5: View {
                             //save
                         }) {
                             NavigationLink(destination: QuestionView2()){
-                            Text("Retake Quiz")
+                                Text("Retake Quiz")
                                     .foregroundColor(.black)
                             }
                         }.padding(.top, 5)
@@ -94,8 +96,8 @@ struct QuestionResult5: View {
     }
 }
 
-struct QuestionResult_Previews: PreviewProvider {
+struct QuestionResult2_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionResult5()
+        QuestionResult2()
     }
 }

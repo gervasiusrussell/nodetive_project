@@ -30,7 +30,7 @@ struct QuestionView5: View {
                         Button(action: {
                             // Action for button 1
                         }) {
-                            NavigationLink(destination: QuestionView5()) {
+                            NavigationLink(destination: QuestionResult1()) {
                                 Text("Very poorly")
                                     .foregroundColor(.black)
                             }
@@ -44,7 +44,7 @@ struct QuestionView5: View {
                         Button(action: {
                             // Action for button 2
                             }) {
-                                NavigationLink(destination: QuestionView5()) {
+                                NavigationLink(destination: QuestionResult2()) {
                                 Text("Somewhat poorly")
                                     .foregroundColor(.black)
                             }
@@ -57,7 +57,7 @@ struct QuestionView5: View {
                                Button(action: {
                             // Action for button 3
                             }) {
-                                NavigationLink(destination: QuestionView5()) {
+                                NavigationLink(destination: QuestionResult5()) {
                                 Text("Fairly well")
                                     .foregroundColor(.black)
                             }
@@ -70,7 +70,7 @@ struct QuestionView5: View {
                                       Button(action: {
                             // Action for button 4
                             }) {
-                                NavigationLink(destination: QuestionView5()) {
+                                NavigationLink(destination: QuestionResult5()) {
                                 Text("Very well")
                                     .foregroundColor(.black)
                             }
