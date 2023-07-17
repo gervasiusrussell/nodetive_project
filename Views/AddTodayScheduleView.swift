@@ -1,13 +1,13 @@
 //
-//  Interface.swift
-//  NodetiveAddSchedule
+//  AddTodayScheduleView.swift
+//  nodetive_collab
 //
-//  Created by Winsen Tjen on 11/07/23.
+//  Created by Winsen Tjen on 17/07/23.
 //
 
 import SwiftUI
 
-struct AddScheduleView: View {
+struct AddTodayScheduleView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     
     @State private var isSheetPresented = false
@@ -19,7 +19,7 @@ struct AddScheduleView: View {
                 HStack {
                         Button(action:{
                         }) {
-                            NavigationLink(destination: CalendarView()){
+                            NavigationLink(destination: HomeView()){
                                 Image(systemName: "arrowshape.backward")
                                     .padding(.leading)
                                     .imageScale(.large)
@@ -29,7 +29,7 @@ struct AddScheduleView: View {
                     Spacer()
                         .frame(width: 20, height: 0)
                     
-                    Text("Add New Schedule")
+                    Text("Add New Today's Schedule")
                         .font(.title2)
                         .padding(.trailing)
                     
@@ -81,9 +81,8 @@ struct AddScheduleView: View {
     }
 }
 
-struct AddScheduleView_Previews: PreviewProvider {
+struct AddTodayScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        AddScheduleView()
+        AddTodayScheduleView()
     }
 }
-

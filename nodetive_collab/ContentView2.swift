@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  ContentView2.swift
 //  nodetive_collab
 //
-//  Created by Gervasius Russell on 13/07/23.
+//  Created by Winsen Tjen on 17/07/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView2: View {
     var body: some View {
         TabView {
             HomeView()
@@ -34,8 +34,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView2_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView2()
     }
 }

@@ -24,21 +24,18 @@ struct CalendarView: View {
                 
                 ZStack {
                     RoundedRectangle(cornerRadius:10)
-                        .stroke(.gray)
-                        .shadow(color: .black,radius: 5)
+                        .shadow(color: .black, radius: 2, x: 0, y: 4)
                         .frame(width:350,height:50)
                         .opacity(0.3)
-                    
-                    
-                    
+                        .foregroundColor(Color("Color1"))
+
                     Text(selectedDate.formatted(date: .abbreviated, time: .omitted))
                         .font(.system(size: 16))
                         .foregroundColor(.black)
                         .animation(.spring(), value: selectedDate)
                         .frame(width: 500)
-                    
-                    
                 }
+                
                 Divider().frame(height: 1)
                 DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
                     .padding(.horizontal)
@@ -68,6 +65,7 @@ struct CalendarView: View {
                     .frame(width: 0, height: 120)
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 
 }
