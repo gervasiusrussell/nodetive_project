@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-struct question_view: View {
+struct QuestionView: View {
     var body: some View {
         NavigationView {
             VStack{
@@ -111,11 +111,12 @@ struct question_view: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
-struct question_view_Previews: PreviewProvider {
+struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        question_view()
+        QuestionView()
     }
 }

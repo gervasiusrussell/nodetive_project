@@ -67,7 +67,7 @@ struct QuestionResult1: View {
                             .frame(width: 300, height: 300)
                         Button(action: {
                             //save
-                        }) { NavigationLink(destination: ContentView()){
+                        }) { NavigationLink(destination: ContentView3()){
                             Text("Save Changes")
                         }
                         .frame(width: 150, height: 40)
@@ -81,7 +81,7 @@ struct QuestionResult1: View {
                         Button(action: {
                             //save
                         }) {
-                            NavigationLink(destination: question_view()){
+                            NavigationLink(destination: QuestionView()){
                                 Text("Retake Quiz")
                                     .foregroundColor(.black)
                             }

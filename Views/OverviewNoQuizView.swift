@@ -11,29 +11,32 @@ struct OverviewNoQuizView: View {
     @State var quiz: String = ""
     
     var body: some View {
-        VStack {
-            Text(quiz)
-            
-            Text("You haven’t unlocked this feature yet. Please answer our survey so we can understand you better and give a recommendation.")
-                .font(.body)
-                .fontWeight(.bold)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
-            
-            Button(action: {
-                self.quiz = "Button pressed"
-            }) {
-                Text("Go to Quiz")
+        NavigationView {
+            VStack {
+                Text(quiz)
+                
+                Text("You haven’t unlocked this feature yet. Please answer our survey so we can understand you better and give a recommendation.")
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 50)
-                            .foregroundColor(.accentColor)
-                            .shadow(radius: 10)
-                    )
+                
+                Button(action: {
+                }) {
+                    NavigationLink { QuestionView() } label: {
+                        Text("Go to Quiz")
+                            .font(.body)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .foregroundColor(.accentColor)
+                                    .shadow(radius: 10)
+                            )
+                    }
+                }
             }
         }
     }

@@ -37,10 +37,10 @@
 		59A0F7962A6049940026527D /* Data Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7952A6049940026527D /* Data Controller.swift */; };
 		59A0F7982A604A400026527D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7972A604A400026527D /* ButtonView.swift */; };
 		59A0F79A2A6050270026527D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7992A6050270026527D /* HomeView.swift */; };
-		59A0F79C2A6050840026527D /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79B2A6050840026527D /* OverviewView.swift */; };
 		59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79D2A60509A0026527D /* ProfileView.swift */; };
 		59DA0CA02A6527D600FF4093 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0C9F2A6527D600FF4093 /* ContentView2.swift */; };
 		59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */; };
+		59DA0CA42A65A19600FF4093 /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA32A65A19600FF4093 /* ContentView3.swift */; };
 		5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */; };
 		5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF7462A654D57009B1069 /* SignUpView.swift */; };
 		5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF74A2A654F11009B1069 /* ButtonView2.swift */; };
@@ -80,10 +80,10 @@
 		59A0F7952A6049940026527D /* Data Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Controller.swift"; sourceTree = "<group>"; };
 		59A0F7972A604A400026527D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		59A0F7992A6050270026527D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		59A0F79B2A6050840026527D /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		59A0F79D2A60509A0026527D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		59DA0C9F2A6527D600FF4093 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodayScheduleView.swift; sourceTree = "<group>"; };
+		59DA0CA32A65A19600FF4093 /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
 		5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPage.swift; sourceTree = "<group>"; };
 		5B5EF7462A654D57009B1069 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5B5EF74A2A654F11009B1069 /* ButtonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView2.swift; sourceTree = "<group>"; };
@@ -128,10 +128,10 @@
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
 				59DA0C9F2A6527D600FF4093 /* ContentView2.swift */,
+				59DA0CA32A65A19600FF4093 /* ContentView3.swift */,
 				59A0F79D2A60509A0026527D /* ProfileView.swift */,
 				5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */,
 				59A0F7992A6050270026527D /* HomeView.swift */,
-				59A0F79B2A6050840026527D /* OverviewView.swift */,
 				285590D32A6006BD006D99C9 /* Pageview.swift */,
 				59A0F7952A6049940026527D /* Data Controller.swift */,
 				285590CF2A600650006D99C9 /* introPage.swift */,
@@ -280,6 +280,7 @@
 				285590EA2A65157D006D99C9 /* QuestionResult2.swift in Sources */,
 				285590F02A6515D0006D99C9 /* QuestionResult5.swift in Sources */,
 				59A0F7982A604A400026527D /* ButtonView.swift in Sources */,
+				59DA0CA42A65A19600FF4093 /* ContentView3.swift in Sources */,
 				140500642A6157EF00B7A823 /* QuestionView5.swift in Sources */,
 				1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */,
 				5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */,
@@ -309,7 +310,6 @@
 				1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */,
 				5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */,
 				285590D02A600650006D99C9 /* introPage.swift in Sources */,
-				59A0F79C2A6050840026527D /* OverviewView.swift in Sources */,
 				1D0E84862A623D6400A7AD08 /* OverviewAfterQuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

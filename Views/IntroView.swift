@@ -13,99 +13,100 @@ struct IntroView: View {
     private let dotAppearance = UIPageControl.appearance()
     
     var body: some View {
-        TabView(selection: $pageIndex) {
-            ForEach(pages) { page in
-                VStack {
-                    Spacer()
-                    PageView(page: page)
-                    Spacer()
-                    if page == pages.last {
-                        VStack{
-                            HStack {
+        NavigationView {
+            TabView(selection: $pageIndex) {
+                ForEach(pages) { page in
+                    VStack {
+                        Spacer()
+                        PageView(page: page)
+                        Spacer()
+                        if page == pages.last {
+                            VStack{
+                                HStack {
+                                    Button(action: {
+                                        goToZero()
+                                    }) {
+                                        Image("applelogo")
+                                            .resizable()
+                                            .frame(width: 20, height: 20)
+                                        Spacer()
+                                            .frame(width: 30, height: 10)
+                                        Text("Sign Up with Apple ID")
+                                        Spacer()
+                                            .frame(width: 10, height: 0)
+                                    }
+                                    .frame(width: 300, height: 40)
+                                    .background(Color.clear)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(10)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.gray, lineWidth: 1))
+                                }
+                                Spacer()
+                                    .frame(width: 0, height: 15)
                                 Button(action: {
                                     goToZero()
                                 }) {
-                                    Image("applelogo")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                    Spacer()
-                                        .frame(width: 30, height: 10)
-                                    Text("Sign Up with Apple ID")
-                                    Spacer()
-                                        .frame(width: 10, height: 0)
+                                    HStack {
+                                        Image("googlelogo")
+                                            .resizable()
+                                            .frame(width: 20, height: 20)
+                                        Spacer()
+                                            .frame(width: 30, height: 10)
+                                        Text("Sign Up with Google")
+                                        Spacer()
+                                            .frame(width: 10, height: 0)
+                                    }
+                                    .frame(width: 300, height: 40)
+                                    .background(Color.clear)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(10)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.gray, lineWidth: 1))
                                 }
-                                .frame(width: 300, height: 40)
-                                .background(Color.clear)
-                                .foregroundColor(.black)
-                                .cornerRadius(10)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.gray, lineWidth: 1))
-                            }
-                            Spacer()
-                                .frame(width: 0, height: 15)
-                            Button(action: {
-                                goToZero()
-                            }) {
+                                Spacer()
+                                    .frame(width: 0, height: 15)
+                                Button(action: {
+                                    goToZero()
+                                }) {
+                                    HStack {
+                                        Image("facebooklogo")
+                                            .resizable()
+                                            .frame(width: 20, height: 20)
+                                        Spacer()
+                                            .frame(width: 30, height: 10)
+                                        Text("Sign Up with Facebook")
+                                        Spacer()
+                                            .frame(width: 10, height: 0)
+                                    }
+                                    .frame(width: 300, height: 40)
+                                    .background(Color.clear)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(10)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.gray, lineWidth: 1))
+                                }
+                                Spacer()
+                                    .frame(width: 0, height: 30)
+                                
                                 HStack {
-                                    Image("googlelogo")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                    Spacer()
-                                        .frame(width: 30, height: 10)
-                                    Text("Sign Up with Google")
-                                    Spacer()
-                                        .frame(width: 10, height: 0)
+                                    Rectangle()
+                                        .frame(width: 130, height: 1)
+                                    Text("Or")
+                                    Rectangle()
+                                        .frame(width: 130, height: 1)
                                 }
-                                .frame(width: 300, height: 40)
-                                .background(Color.clear)
-                                .foregroundColor(.black)
-                                .cornerRadius(10)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.gray, lineWidth: 1))
-                            }
-                            Spacer()
-                                .frame(width: 0, height: 15)
-                            Button(action: {
-                                goToZero()
-                            }) {
-                                HStack {
-                                    Image("facebooklogo")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                    Spacer()
-                                        .frame(width: 30, height: 10)
-                                    Text("Sign Up with Facebook")
-                                    Spacer()
-                                        .frame(width: 10, height: 0)
-                                }
-                                .frame(width: 300, height: 40)
-                                .background(Color.clear)
-                                .foregroundColor(.black)
-                                .cornerRadius(10)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.gray, lineWidth: 1))
-                            }
-                            Spacer()
-                                .frame(width: 0, height: 30)
-                            
-                            HStack {
-                                Rectangle()
-                                    .frame(width: 130, height: 1)
-                                Text("Or")
-                                Rectangle()
-                                    .frame(width: 130, height: 1)
-                            }
-                            
-                            Spacer()
-                                .frame(width: 0, height: 30)
-                            
-                            Button(action: {
-                            }) {
-                                NavigationLink(destination: SignUpView()){
-                                    Text("Sign Up")}
+                                
+                                Spacer()
+                                    .frame(width: 0, height: 30)
+                                
+                                Button(action: {
+                                }) {
+                                    NavigationLink(destination: SignUpView()){
+                                        Text("Sign Up")}
                                     .font(.body)
                                     .fontWeight(.medium)
                                     .foregroundColor(Color.black)
@@ -117,23 +118,24 @@ struct IntroView: View {
                                             .frame(width: 130)
                                             .background(RoundedRectangle(cornerRadius:35)
                                                 .fill(Color("Pinky3"))))
+                                }
                             }
+                            Spacer()
+                                .frame(width: 0, height: 30)
+                            
                         }
                         Spacer()
-                            .frame(width: 0, height: 30)
-                        
                     }
-                    Spacer()
+                    .tag(page.tag)
                 }
-                .tag(page.tag)
             }
-        }
-        .animation(.easeInOut, value: pageIndex)
-        .tabViewStyle(.page)
-        .indexViewStyle(.page(backgroundDisplayMode: .interactive))
-        .onAppear {
-            dotAppearance.currentPageIndicatorTintColor = .black
-            dotAppearance.pageIndicatorTintColor = .gray
+            .animation(.easeInOut, value: pageIndex)
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+            .onAppear {
+                dotAppearance.currentPageIndicatorTintColor = .black
+                dotAppearance.pageIndicatorTintColor = .gray
+            }
         }
     }
     func incrementPage() {
