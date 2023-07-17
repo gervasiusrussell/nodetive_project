@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077C95892A651D1C007E294D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C95882A651D1C007E294D /* NotificationView.swift */; };
 		1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */; };
 		1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004C2A5FE00E00B7A823 /* ContentView.swift */; };
 		1405004F2A5FE01000B7A823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405004E2A5FE01000B7A823 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 		59A0F79A2A6050270026527D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7992A6050270026527D /* HomeView.swift */; };
 		59A0F79C2A6050840026527D /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79B2A6050840026527D /* OverviewView.swift */; };
 		59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79D2A60509A0026527D /* ProfileView.swift */; };
+		59DA0CA02A6527D600FF4093 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0C9F2A6527D600FF4093 /* ContentView2.swift */; };
+		59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */; };
 		5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */; };
 		5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF7462A654D57009B1069 /* SignUpView.swift */; };
 		5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF74A2A654F11009B1069 /* ButtonView2.swift */; };
@@ -45,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		077C95882A651D1C007E294D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		140500472A5FE00E00B7A823 /* nodetive_collab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nodetive_collab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nodetive_collabApp.swift; sourceTree = "<group>"; };
 		1405004C2A5FE00E00B7A823 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		59A0F7992A6050270026527D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		59A0F79B2A6050840026527D /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		59A0F79D2A60509A0026527D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		59DA0C9F2A6527D600FF4093 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodayScheduleView.swift; sourceTree = "<group>"; };
 		5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPage.swift; sourceTree = "<group>"; };
 		5B5EF7462A654D57009B1069 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5B5EF74A2A654F11009B1069 /* ButtonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView2.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 			children = (
 				1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */,
 				1405004C2A5FE00E00B7A823 /* ContentView.swift */,
+				59DA0C9F2A6527D600FF4093 /* ContentView2.swift */,
 				59A0F79D2A60509A0026527D /* ProfileView.swift */,
 				5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */,
 				59A0F7992A6050270026527D /* HomeView.swift */,
@@ -161,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				59A0F78A2A60464F0026527D /* AddScheduleView.swift */,
+				59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */,
 				5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */,
 				285590D12A6006A1006D99C9 /* IntroView.swift */,
 				5B5EF7462A654D57009B1069 /* SignUpView.swift */,
@@ -169,6 +177,7 @@
 				5B5EF74A2A654F11009B1069 /* ButtonView2.swift */,
 				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
+				077C95882A651D1C007E294D /* NotificationView.swift */,
 				1D0E84812A623C8400A7AD08 /* OverviewNoQuizView.swift */,
 				1D0E84852A623D6400A7AD08 /* OverviewAfterQuizView.swift */,
 			);
@@ -277,13 +286,16 @@
 				1405005D2A6148A300B7A823 /* QuestionView2.swift in Sources */,
 				140500602A6152A200B7A823 /* QuestionView3.swift in Sources */,
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
+				59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */,
 				5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
+				077C95892A651D1C007E294D /* NotificationView.swift in Sources */,
 				59A0F7902A6048930026527D /* Schedule.swift in Sources */,
 				285590D42A6006BD006D99C9 /* Pageview.swift in Sources */,
 				59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */,
 				285590EC2A6515A9006D99C9 /* QuestionResult3.swift in Sources */,
 				59A0F7872A6046210026527D /* ScheduleView.swift in Sources */,
+				59DA0CA02A6527D600FF4093 /* ContentView2.swift in Sources */,
 				285590E82A651569006D99C9 /* QuestionResult1.swift in Sources */,
 				59A0F7962A6049940026527D /* Data Controller.swift in Sources */,
 				59A0F78E2A6047860026527D /* Nodetive Data.xcdatamodeld in Sources */,
