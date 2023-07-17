@@ -67,7 +67,7 @@ struct QuestionResult3: View {
                             .frame(width: 300, height: 300)
                         Button(action: {
                             //save
-                        }) { NavigationLink(destination: HomeView()){
+                        }) { NavigationLink(destination: ContentView()){
                             Text("Save Changes")
                         }
                         .frame(width: 150, height: 40)
