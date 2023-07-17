@@ -105,6 +105,7 @@
 		1405003E2A5FE00E00B7A823 = {
 			isa = PBXGroup;
 			children = (
+				59DA0CA52A65A47100FF4093 /* Additional */,
 				1405005E2A6148C900B7A823 /* QuestionView */,
 				59A0F7932A6048B70026527D /* Validate Variable */,
 				59A0F7832A6045DA0026527D /* Views */,
@@ -176,8 +177,6 @@
 				5B5EF7462A654D57009B1069 /* SignUpView.swift */,
 				5B5EF74C2A6556A1009B1069 /* SignInView.swift */,
 				59A0F7842A6046120026527D /* OverlayView.swift */,
-				59A0F7972A604A400026527D /* ButtonView.swift */,
-				5B5EF74A2A654F11009B1069 /* ButtonView2.swift */,
 				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
 				077C95882A651D1C007E294D /* NotificationView.swift */,
@@ -202,6 +201,15 @@
 				59A0F78C2A6047860026527D /* Nodetive Data.xcdatamodeld */,
 			);
 			path = "Model Data";
+			sourceTree = "<group>";
+		};
+		59DA0CA52A65A47100FF4093 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				59A0F7972A604A400026527D /* ButtonView.swift */,
+				5B5EF74A2A654F11009B1069 /* ButtonView2.swift */,
+			);
+			path = Additional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

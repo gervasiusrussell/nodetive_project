@@ -80,9 +80,6 @@ struct OverviewAfterQuizView: View {
                     )
             }
         }
-        
-        Spacer()
-        
     }
 }
 struct OverviewAfterQuizView_Previews: PreviewProvider {
