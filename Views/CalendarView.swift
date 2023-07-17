@@ -68,6 +68,7 @@ struct CalendarView: View {
                     .frame(width: 0, height: 120)
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 
 }

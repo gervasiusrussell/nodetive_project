@@ -14,18 +14,18 @@ struct AddScheduleView: View {
     var body: some View {
         NavigationView{
             VStack {
+                Spacer()
+                    .frame(height: 20)
                 HStack {
-                    NavigationLink{
-                        CalendarView()
-                    } label:{
                         Button(action:{
                         }) {
-                            Image(systemName: "arrowshape.backward")
-                                .padding(.leading)
-                                .imageScale(.large)
-                                .foregroundColor(.black)
+                            NavigationLink(destination: CalendarView()){
+                                Image(systemName: "arrowshape.backward")
+                                    .padding(.leading)
+                                    .imageScale(.large)
+                                    .foregroundColor(.black)
+                            }
                         }
-                    }
                     Spacer()
                         .frame(width: 20, height: 0)
                     
@@ -77,6 +77,7 @@ struct AddScheduleView: View {
                     .padding()
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
