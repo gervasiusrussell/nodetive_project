@@ -39,7 +39,7 @@ struct ProfileView: View {
                         Spacer()
                             .frame(width: 118, height: 0)
                         NavigationLink{
-                            IntroView()
+                            PersonalDataPage()
                         } label:{
                             Image(systemName: "arrow.forward")
                                 .resizable()
