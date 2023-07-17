@@ -103,17 +103,21 @@ struct IntroView: View {
                                 .frame(width: 0, height: 30)
                             
                             Button(action: {
-                                goToZero()
                             }) {
-                                Text("Sign Up")
+                                NavigationLink(destination: SignUpView()){
+                                    Text("Sign Up")}
+                                    .font(.body)
+                                    .fontWeight(.medium)
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                    .background(
+                                        RoundedRectangle(cornerRadius:35)
+                                            .strokeBorder(Color.black)
+                                            .frame(width: 130)
+                                            .background(RoundedRectangle(cornerRadius:35)
+                                                .fill(Color("Pinky3"))))
                             }
-                            .frame(width: 100, height: 40)
-                            .background(Color(red: 1.0, green: 0.87, blue: 0.87))
-                            .foregroundColor(.black)
-                            .cornerRadius(20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.black, lineWidth: 2))
                         }
                         Spacer()
                             .frame(width: 0, height: 30)

@@ -39,6 +39,8 @@
 		59A0F79C2A6050840026527D /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79B2A6050840026527D /* OverviewView.swift */; };
 		59A0F79E2A60509A0026527D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F79D2A60509A0026527D /* ProfileView.swift */; };
 		5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */; };
+		5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF7462A654D57009B1069 /* SignUpView.swift */; };
+		5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF74A2A654F11009B1069 /* ButtonView2.swift */; };
 		5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		59A0F79B2A6050840026527D /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		59A0F79D2A60509A0026527D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPage.swift; sourceTree = "<group>"; };
+		5B5EF7462A654D57009B1069 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		5B5EF74A2A654F11009B1069 /* ButtonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView2.swift; sourceTree = "<group>"; };
 		5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,8 +163,10 @@
 				59A0F78A2A60464F0026527D /* AddScheduleView.swift */,
 				5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */,
 				285590D12A6006A1006D99C9 /* IntroView.swift */,
+				5B5EF7462A654D57009B1069 /* SignUpView.swift */,
 				59A0F7842A6046120026527D /* OverlayView.swift */,
 				59A0F7972A604A400026527D /* ButtonView.swift */,
+				5B5EF74A2A654F11009B1069 /* ButtonView2.swift */,
 				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
 				1D0E84812A623C8400A7AD08 /* OverviewNoQuizView.swift */,
@@ -266,6 +272,7 @@
 				1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */,
 				5BD8B55D2A5FE8F2005E7EFD /* CalendarView.swift in Sources */,
 				1405005B2A6133E000B7A823 /* QuestionView.swift in Sources */,
+				5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */,
 				59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */,
 				1405005D2A6148A300B7A823 /* QuestionView2.swift in Sources */,
 				140500602A6152A200B7A823 /* QuestionView3.swift in Sources */,
@@ -284,6 +291,7 @@
 				1D0E84822A623C8400A7AD08 /* OverviewNoQuizView.swift in Sources */,
 				59A0F79A2A6050270026527D /* HomeView.swift in Sources */,
 				1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */,
+				5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */,
 				285590D02A600650006D99C9 /* introPage.swift in Sources */,
 				59A0F79C2A6050840026527D /* OverviewView.swift in Sources */,
 				1D0E84862A623D6400A7AD08 /* OverviewAfterQuizView.swift in Sources */,
