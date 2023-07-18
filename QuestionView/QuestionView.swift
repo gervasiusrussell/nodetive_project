@@ -9,6 +9,8 @@ import SwiftUI
 import Foundation
 
 struct QuestionView: View {
+    @State var isPresented = true
+    
     var body: some View {
         NavigationView {
             VStack{
@@ -110,7 +112,9 @@ struct QuestionView: View {
                     }.ignoresSafeArea()
                 }
             }
-        }
+        }.toolbar(isPresented ? .visible : .hidden)
+
+//        .fullScreenCover(isPresented: $isPresented, content: QuestionView())
         .navigationBarBackButtonHidden(true)
     }
 }

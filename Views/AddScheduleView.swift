@@ -69,9 +69,23 @@ struct AddScheduleView: View {
                         .stroke(Color.black, lineWidth: 2)
                 )
                 
-                List(schedules){ schedule in
-                    Text(schedule.descSch ?? "unknown")
+                VStack {
+                    List {
+                        ForEach(schedules, id:\.self){ schedule in
+                            VStack {
+                                
+                                Text(schedule.descSch ?? "unknown")
+                                Text(schedule.date?.description ?? "unknown")
+                            }.background(schedule.category == "Productivity" ? .green : .pink)
+                        }
                 }
+                    
+                }
+//
+//                List(schedules){ schedule in
+//                    Text(schedule.descSch ?? "unknown")
+//                }
+                
 
                     .sheet(isPresented: $isSheetPresented) {
                         OverlayView()
