@@ -125,7 +125,7 @@ struct HomeView: View {
                                         .resizable()
                                         .frame(width: 60, height: 40)
                                     Spacer()
-                                        .frame(width: 60, height: 0)
+                                        .frame(width: 49, height: 0)
                                     Image(systemName: "house")
                                         .resizable()
                                         .frame(width: 50, height: 40)
@@ -135,25 +135,25 @@ struct HomeView: View {
                                         .resizable()
                                         .frame(width: 50,height: 40)
                                     Spacer()
-                                        .frame(width: 10)
-                                }
+                                        .frame(width: 5)
+                                }.padding(.top)
                                 
                                 HStack {
                                     Spacer()
-                                        .frame(width: 20)
+                                        .frame(width: 35)
                                     Text("Sleep")
                                     Spacer()
-                                        .frame(width: 60, height: 0)
+                                        .frame(width: 55, height: 0)
                                     Text("Leisure")
                                     Spacer()
-                                        .frame(width: 30, height: 0)
+                                        .frame(width: 32, height: 0)
                                     Text("Productive")
                                     Spacer()
                                         .frame(width: 15)
                                     
                                 }
                                 Spacer()
-                                    .frame(width: 0, height: 20)
+                                    .frame(height: 5)
                                 
                                 HStack {
                                     Spacer()
@@ -161,17 +161,17 @@ struct HomeView: View {
                                     
                                     Text("8 Hrs")
                                     Spacer()
-                                        .frame(width: 55, height: 0)
+                                        .frame(width: 60, height: 0)
                                     Text("8 Hrs")
                                     Spacer()
                                         .frame(width: 60, height: 0)
                                     Text("8 Hrs")
                                     
-                                }
+                                }.padding(.bottom)
                                 
-                            }
+                        }
                             
-                        )
+                    )
                     
                     
                     Spacer()
