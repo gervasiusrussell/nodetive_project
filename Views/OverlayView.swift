@@ -181,6 +181,7 @@ struct OverlayView: View {
                         } catch {
                             print(error.localizedDescription)
                         }
+                        
                     }) {
                         Text("Save Changes")
                             .font(.body)
@@ -194,7 +195,8 @@ struct OverlayView: View {
                 }
             }
             
-        }.onChange(of: managedObjectContext.hasChanges) { newValue in
+        }
+        .onChange(of: managedObjectContext.hasChanges) { newValue in
             print(newValue)
         }
     }

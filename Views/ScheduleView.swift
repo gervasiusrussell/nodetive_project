@@ -17,7 +17,7 @@ struct ScheduleView: View {
     var body: some View {
         ZStack{
             Rectangle()
-                .frame(width: 350,height: 120)
+                .frame(width: 300,height: 150)
                 .foregroundColor(Color("Color3"))
                 .cornerRadius(10)
                 .overlay(
@@ -29,20 +29,23 @@ struct ScheduleView: View {
                     Text(date)
                         .fontWeight(.bold)
                         .foregroundColor(.black)
+                        .padding(.bottom)
                     
                     Spacer()
-                        .frame(width: 100, height: 10)
+                        .frame(width: 60, height: 60)
                     
                     Text(time)
                         .fontWeight(.bold)
                         .foregroundColor(.black)
+                        .padding(.bottom)
                 }
                 Spacer()
-                    .frame(height: 20)
+                    .frame(width: 20, height: 10)
                 
                 Text(desc)
-                    .frame(width: 300, height: 30, alignment: .leading)
+                    .frame(width: 260, height: 20, alignment: .leading)
                     .foregroundColor(.black)
+                    .padding(.top)
                 
             }
             Spacer()

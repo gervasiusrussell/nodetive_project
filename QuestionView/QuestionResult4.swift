@@ -79,7 +79,7 @@ struct QuestionResult4: View {
                         Button(action: {
                             //save
                         }) {
-                            NavigationLink(destination: QuestionView2()){
+                            NavigationLink(destination: QuestionView()){
                                 Text("Retake Quiz")
                                     .foregroundColor(.black)
                             }

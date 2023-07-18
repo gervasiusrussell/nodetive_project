@@ -19,79 +19,82 @@ struct QuestionView5: View {
                         .foregroundColor(Color("Pinky1"))
                         .ignoresSafeArea()
                         .frame(width: 400, height: 500)
-                    VStack{
-                        Text("How well do you manage your time")
-                            .font(.system(size: 20))
-                            .multilineTextAlignment(.center)
-                        Text("and prioritize tasks?")
-                            .font(.system(size: 20))
-                        Spacer()
-                            .frame( height: 20)
-                        Button(action: {
-                            // Action for button 1
-                        }) {
-                            NavigationLink(destination: QuestionView5()) {
-                                Text("Very poorly")
-                                    .foregroundColor(.black)
-                            }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                        
-                        Button(action: {
-                            // Action for button 2
+                    
+                    ScrollView{
+                        VStack{
+                            Text("How well do you manage your time")
+                                .font(.system(size: 20))
+                                .multilineTextAlignment(.center)
+                            Text("and prioritize tasks?")
+                                .font(.system(size: 20))
+                            Spacer()
+                                .frame( height: 20)
+                            Button(action: {
+                                // Action for button 1
                             }) {
-                                NavigationLink(destination: QuestionView5()) {
-                                Text("Somewhat poorly")
-                                    .foregroundColor(.black)
+                                NavigationLink(destination: QuestionResult1()) {
+                                    Text("Very poorly")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
                             }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                               Button(action: {
-                            // Action for button 3
+                            
+                            
+                            Button(action: {
+                                // Action for button 2
                             }) {
-                                NavigationLink(destination: QuestionView5()) {
-                                Text("Fairly well")
-                                    .foregroundColor(.black)
+                                NavigationLink(destination: QuestionResult2()) {
+                                    Text("Somewhat poorly")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
                             }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                                      Button(action: {
-                            // Action for button 4
+                            
+                            Button(action: {
+                                // Action for button 3
                             }) {
-                                NavigationLink(destination: QuestionView5()) {
-                                Text("Very well")
-                                    .foregroundColor(.black)
+                                NavigationLink(destination: QuestionResult3()) {
+                                    Text("Fairly well")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
                             }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                        Button(action: {
-                            // Action for the button
-                        }) {
-                            NavigationLink(destination: HomeView()) {
-                                Text("Skip for later")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.black)
-                                    .padding()
+                            
+                            Button(action: {
+                                // Action for button 4
+                            }) {
+                                NavigationLink(destination: QuestionResult5()) {
+                                    Text("Very well")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
+                            }
+                            
+                            Button(action: {
+                                // Action for the button
+                            }) {
+                                NavigationLink(destination: ContentView2()) {
+                                    Text("Skip for later")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.black)
+                                        .padding()
+                                }
                             }
                         }
                     }
-                    .padding()
+                    .padding(.top, 40.0)
                     
                     VStack {
                         Spacer()

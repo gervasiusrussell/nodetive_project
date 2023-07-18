@@ -30,7 +30,6 @@
 		285590F02A6515D0006D99C9 /* QuestionResult5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285590EF2A6515D0006D99C9 /* QuestionResult5.swift */; };
 		59A0F7852A6046120026527D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7842A6046120026527D /* OverlayView.swift */; };
 		59A0F7872A6046210026527D /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7862A6046210026527D /* ScheduleView.swift */; };
-		59A0F7892A60462F0026527D /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7882A60462F0026527D /* ScheduleListView.swift */; };
 		59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F78A2A60464F0026527D /* AddScheduleView.swift */; };
 		59A0F78E2A6047860026527D /* Nodetive Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F78C2A6047860026527D /* Nodetive Data.xcdatamodeld */; };
 		59A0F7902A6048930026527D /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F78F2A6048930026527D /* Schedule.swift */; };
@@ -43,7 +42,6 @@
 		59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */; };
 		59DA0CA42A65A19600FF4093 /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA32A65A19600FF4093 /* ContentView3.swift */; };
 		59DA0CA72A6639FE00FF4093 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA62A6639FE00FF4093 /* PersistenceController.swift */; };
-		59DA0CA92A6645DA00FF4093 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA0CA82A6645DA00FF4093 /* ListView.swift */; };
 		5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */; };
 		5B5EF7472A654D57009B1069 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF7462A654D57009B1069 /* SignUpView.swift */; };
 		5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EF74A2A654F11009B1069 /* ButtonView2.swift */; };
@@ -76,7 +74,6 @@
 		285590EF2A6515D0006D99C9 /* QuestionResult5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResult5.swift; sourceTree = "<group>"; };
 		59A0F7842A6046120026527D /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		59A0F7862A6046210026527D /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
-		59A0F7882A60462F0026527D /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
 		59A0F78A2A60464F0026527D /* AddScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleView.swift; sourceTree = "<group>"; };
 		59A0F78D2A6047860026527D /* Nodetive Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Nodetive Data.xcdatamodel"; sourceTree = "<group>"; };
 		59A0F78F2A6048930026527D /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
@@ -89,7 +86,6 @@
 		59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodayScheduleView.swift; sourceTree = "<group>"; };
 		59DA0CA32A65A19600FF4093 /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
 		59DA0CA62A6639FE00FF4093 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		59DA0CA82A6645DA00FF4093 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		5B31FE172A61DBB000C69A5B /* PersonalDataPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPage.swift; sourceTree = "<group>"; };
 		5B5EF7462A654D57009B1069 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5B5EF74A2A654F11009B1069 /* ButtonView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView2.swift; sourceTree = "<group>"; };
@@ -178,14 +174,12 @@
 			children = (
 				59A0F78A2A60464F0026527D /* AddScheduleView.swift */,
 				59A0F7842A6046120026527D /* OverlayView.swift */,
-				59DA0CA82A6645DA00FF4093 /* ListView.swift */,
 				59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */,
 				5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */,
 				285590D12A6006A1006D99C9 /* IntroView.swift */,
 				5B5EF7462A654D57009B1069 /* SignUpView.swift */,
 				5B5EF74C2A6556A1009B1069 /* SignInView.swift */,
 				59A0F7862A6046210026527D /* ScheduleView.swift */,
-				59A0F7882A60462F0026527D /* ScheduleListView.swift */,
 				077C95882A651D1C007E294D /* NotificationView.swift */,
 				1D0E84812A623C8400A7AD08 /* OverviewNoQuizView.swift */,
 				1D0E84852A623D6400A7AD08 /* OverviewAfterQuizView.swift */,
@@ -292,7 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A0F7922A6048A70026527D /* Level.swift in Sources */,
-				59A0F7892A60462F0026527D /* ScheduleListView.swift in Sources */,
 				285590EE2A6515BF006D99C9 /* QuestionResult4.swift in Sources */,
 				285590EA2A65157D006D99C9 /* QuestionResult2.swift in Sources */,
 				285590F02A6515D0006D99C9 /* QuestionResult5.swift in Sources */,
@@ -305,7 +298,6 @@
 				5B5EF74B2A654F11009B1069 /* ButtonView2.swift in Sources */,
 				59A0F78B2A60464F0026527D /* AddScheduleView.swift in Sources */,
 				1405005D2A6148A300B7A823 /* QuestionView2.swift in Sources */,
-				59DA0CA92A6645DA00FF4093 /* ListView.swift in Sources */,
 				140500602A6152A200B7A823 /* QuestionView3.swift in Sources */,
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
 				59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */,
