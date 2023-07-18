@@ -16,6 +16,8 @@ struct OverlayView: View {
     @State private var currentDate = Date()
     @State private var currentDate1 = Date()
     @State var category = ""
+    @State private var currentTime = Date()
+    @State private var isDatePickerVisible = false
     
 
     func getCurrentTime() -> String{
@@ -39,6 +41,7 @@ struct OverlayView: View {
             
             HStack{
                 Button(action: {
+                    
                 }) {
                     Text(currentTime)
                         .foregroundColor(.black)
@@ -57,6 +60,16 @@ struct OverlayView: View {
                         )
                 }
             }
+            if isDatePickerVisible {
+                            DatePicker("", selection: $currentTime, displayedComponents: .date)
+                                .datePickerStyle(.compact)
+                                .labelsHidden()
+                    .padding(.top, 20)
+                }
+                
+                func showDatePicker() {
+                    isDatePickerVisible.toggle()
+                }
             
             Spacer()
                 .frame(width: 0, height: 40)
