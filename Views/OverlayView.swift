@@ -60,16 +60,16 @@ struct OverlayView: View {
                         )
                 }
             }
-            if isDatePickerVisible {
-                            DatePicker("", selection: $currentTime, displayedComponents: .date)
-                                .datePickerStyle(.compact)
-                                .labelsHidden()
-                    .padding(.top, 20)
-                }
-                
-                func showDatePicker() {
-                    isDatePickerVisible.toggle()
-                }
+//            if isDatePickerVisible {
+//                            DatePicker("", selection: $currentTime, displayedComponents: .date)
+//                                .datePickerStyle(.compact)
+//                                .labelsHidden()
+//                    .padding(.top, 20)
+//                }
+//                
+//                func showDatePicker() {
+//                    isDatePickerVisible.toggle()
+//                }
             
             Spacer()
                 .frame(width: 0, height: 40)
