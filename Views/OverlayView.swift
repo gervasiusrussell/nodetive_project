@@ -16,6 +16,7 @@ struct OverlayView: View {
     @State private var currentDate = Date()
     @State private var currentDate1 = Date()
     @State var category = ""
+    
 
     func getCurrentTime() -> String{
         let formatter = DateFormatter()

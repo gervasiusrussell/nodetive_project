@@ -16,3 +16,7 @@ struct ScheduleData: Hashable, Codable {
     var category: String
     var descSch: String
 }
+
+class TaskViewModel: ObservableObject {
+    @Published var showDatePicker: Bool = false
+}
