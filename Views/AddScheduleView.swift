@@ -70,23 +70,16 @@ struct AddScheduleView: View {
                 )
                 
                 VStack {
-                    List {
+                    ScrollView {
                         ForEach(schedules, id:\.self){ schedule in
-                            VStack {
-                                
-                                Text(schedule.descSch ?? "unknown")
-                                Text(schedule.date?.description ?? "unknown")
-                            }.background(schedule.category == "Productivity" ? .green : .pink)
+                            ScheduleView(bgColor: .black, date: "a", time: "b", desc: "c")
+                            //                            VStack {
+                            //                                Text(schedule.descSch ?? "unknown")
+                            //                                Text(schedule.date?.description ?? "unknown")
+                            //                            }.background(schedule.category == "Productivity" ? .green : .pink)
                         }
+                    }
                 }
-                    
-                }
-//
-//                List(schedules){ schedule in
-//                    Text(schedule.descSch ?? "unknown")
-//                }
-                
-
                     .sheet(isPresented: $isSheetPresented) {
                         OverlayView()
                             .presentationDetents([.height (800)])

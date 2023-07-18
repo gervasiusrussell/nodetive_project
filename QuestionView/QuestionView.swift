@@ -22,76 +22,81 @@ struct QuestionView: View {
                         .foregroundColor(Color("Pinky1"))
                         .ignoresSafeArea()
                         .frame(width: 400, height: 500)
-                    VStack{
-                        Text("On average, how many hours do")
-                            .font(.system(size: 20))
-                        Text("you sleep each night?")
-                            .font(.system(size: 20))
-                        Spacer()
-                            .frame( height: 40)
-                        Button(action: {
-                            // Action for button 1
-                        }) {
-                            NavigationLink(destination: QuestionView2()) {
-                                Text("Less than 5 hours")
-                                    .foregroundColor(.black)
-                            }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                        
-                        Button(action: {
-                            // Action for button 2
+                    
+                    ScrollView{
+                        VStack{
+                            Text("On average, how many hours do")
+                                .font(.system(size: 20))
+                            Text("you sleep each night?")
+                                .font(.system(size: 20))
+                            Spacer()
+                                .frame( height: 40)
+                            Button(action: {
+                                // Action for button 1
                             }) {
                                 NavigationLink(destination: QuestionView2()) {
-                                Text("5-6 hours")
-                                    .foregroundColor(.black)
-                            }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                               Button(action: {
-                            // Action for button 3
-                            }) {
-                                NavigationLink(destination: QuestionView2()) {
-                                Text("7-8 hours")
-                                    .foregroundColor(.black)
-                            }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                                      Button(action: {
-                            // Action for button 4
-                            }) {
-                                NavigationLink(destination: QuestionView2()) {
-                                Text("9 or more hours")
-                                    .foregroundColor(.black)
-                            }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                        Button(action: {
-                            // Action for the button
-                        }) {
-                            Text("Skip for later")
-                                .font(.system(size: 14))
-                                .foregroundColor(.black)
+                                    Text("Less than 5 hours")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
                                 .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
+                            }
+                            
+                            
+                            Button(action: {
+                                // Action for button 2
+                            }) {
+                                NavigationLink(destination: QuestionView2()) {
+                                    Text("5-6 hours")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
+                            }
+                            
+                            Button(action: {
+                                // Action for button 3
+                            }) {
+                                NavigationLink(destination: QuestionView2()) {
+                                    Text("7-8 hours")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
+                            }
+                            
+                            Button(action: {
+                                // Action for button 4
+                            }) {
+                                NavigationLink(destination: QuestionView2()) {
+                                    Text("9 or more hours")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
+                            }
+                            
+                            Button(action: {
+                                // Action for the button
+                            }) {
+                                NavigationLink{ ContentView2() } label: {
+                                    Text("Skip for later")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.black)
+                                        .padding()
+                                }
+                            }
                         }
                     }
-                    .padding()
+                    .padding(.top, 40.0)
                     
                     VStack {
                         Spacer()
@@ -112,7 +117,8 @@ struct QuestionView: View {
                     }.ignoresSafeArea()
                 }
             }
-        }.toolbar(isPresented ? .visible : .hidden)
+        }
+        .toolbar(isPresented ? .visible : .hidden)
 
 //        .fullScreenCover(isPresented: $isPresented, content: QuestionView())
         .navigationBarBackButtonHidden(true)

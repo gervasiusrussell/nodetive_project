@@ -19,79 +19,82 @@ struct QuestionView4: View {
                         .foregroundColor(Color("Pinky1"))
                         .ignoresSafeArea()
                         .frame(width: 400, height: 500)
-                    VStack{
-                        Text("How often do you feel rested and")
-                            .font(.system(size: 20))
-                            .multilineTextAlignment(.center)
-                        Text("energized after a night's sleep?")
-                            .font(.system(size: 20))
-                        Spacer()
-                            .frame( height: 20)
-                        Button(action: {
-                            // Action for button 1
-                        }) {
-                            NavigationLink(destination: QuestionView5()) {
-                                Text("Rarely or never")
-                                    .foregroundColor(.black)
-                            }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                        
-                        Button(action: {
-                            // Action for button 2
+                    
+                    ScrollView{
+                        VStack{
+                            Text("How often do you feel rested and")
+                                .font(.system(size: 20))
+                                .multilineTextAlignment(.center)
+                            Text("energized after a night's sleep?")
+                                .font(.system(size: 20))
+                            Spacer()
+                                .frame( height: 20)
+                            Button(action: {
+                                // Action for button 1
                             }) {
                                 NavigationLink(destination: QuestionView5()) {
-                                Text("Occasionally")
-                                    .foregroundColor(.black)
+                                    Text("Rarely or never")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
                             }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                               Button(action: {
-                            // Action for button 3
+                            
+                            
+                            Button(action: {
+                                // Action for button 2
                             }) {
                                 NavigationLink(destination: QuestionView5()) {
-                                Text("Most of the time")
-                                    .foregroundColor(.black)
+                                    Text("Occasionally")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
                             }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                                      Button(action: {
-                            // Action for button 4
+                            
+                            Button(action: {
+                                // Action for button 3
                             }) {
                                 NavigationLink(destination: QuestionView5()) {
-                                Text("Almost always")
-                                    .foregroundColor(.black)
+                                    Text("Most of the time")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
                             }
-                            .frame(maxWidth: 300)
-                            .padding()
-                            .background(Color("pink lagi"))
-                            .cornerRadius(10)
-                        }
-                        
-                        Button(action: {
-                            // Action for the button
-                        }) {
-                            NavigationLink(destination: HomeView()) {
-                                Text("Skip for later")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.black)
-                                    .padding()
+                            
+                            Button(action: {
+                                // Action for button 4
+                            }) {
+                                NavigationLink(destination: QuestionView5()) {
+                                    Text("Almost always")
+                                        .foregroundColor(.black)
+                                }
+                                .frame(maxWidth: 300)
+                                .padding()
+                                .background(Color("pink lagi"))
+                                .cornerRadius(10)
+                            }
+                            
+                            Button(action: {
+                                // Action for the button
+                            }) {
+                                NavigationLink(destination: ContentView2()) {
+                                    Text("Skip for later")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.black)
+                                        .padding()
+                                }
                             }
                         }
                     }
-                    .padding()
+                    .padding(.top, 40.0)
                     
                     VStack {
                         Spacer()
