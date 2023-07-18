@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct AddScheduleView: View {
-    @Environment(\.managedObjectContext) var managedObjectContext
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.startTime)
+    ]) var schedules: FetchedResults<Schedule>
     
     @State private var isSheetPresented = false
     var body: some View {
@@ -67,9 +69,10 @@ struct AddScheduleView: View {
                         .stroke(Color.black, lineWidth: 2)
                 )
                 
-                Spacer()
-                //.frame(height: 570)
-                
+                List(schedules){ schedule in
+                    Text(schedule.descSch ?? "unknown")
+                }
+
                     .sheet(isPresented: $isSheetPresented) {
                         OverlayView()
                             .presentationDetents([.height (800)])

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct OverlayView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     @State var descriptionDescription: String = ""
     @State private var isSelected = false
     @State private var isSelected2 = false
     @State private var currentDate = Date()
     @State private var currentDate1 = Date()
+    @State var category = ""
 
     func getCurrentTime() -> String{
         let formatter = DateFormatter()
@@ -103,6 +106,7 @@ struct OverlayView: View {
                 ButtonView(isSelected: $isSelected, color: Color("Color1"), text: "Productivity")
                     .onTapGesture {
                         isSelected.toggle()
+                        category = "Productivity"
 
                         if isSelected {
                             isSelected2 = false
@@ -115,6 +119,7 @@ struct OverlayView: View {
                 ButtonView(isSelected: $isSelected2, color: Color("Color1"), text: "Leisure")
                     .onTapGesture {
                         isSelected2.toggle()
+                        category = "Leisure"
 
                         if isSelected2 {
                             isSelected = false
@@ -163,6 +168,19 @@ struct OverlayView: View {
                 
                 VStack{
                     Button(action:{
+                        let schedule = Schedule(context: managedObjectContext)
+                        schedule.date = Date()
+                        schedule.startTime = currentDate
+                        schedule.endTime = currentDate1
+                        schedule.category = category
+                        schedule.descSch = descriptionDescription
+                        
+                        do {
+                            try managedObjectContext.save()
+                            print("Data Save")
+                        } catch {
+                            print(error.localizedDescription)
+                        }
                     }) {
                         Text("Save Changes")
                             .font(.body)
@@ -176,6 +194,8 @@ struct OverlayView: View {
                 }
             }
             
+        }.onChange(of: managedObjectContext.hasChanges) { newValue in
+            print(newValue)
         }
     }
 }
