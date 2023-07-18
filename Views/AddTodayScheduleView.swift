@@ -12,7 +12,7 @@ struct AddTodayScheduleView: View {
     
     @State private var isSheetPresented = false
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack {
                 Spacer()
                     .frame(height: 20)
