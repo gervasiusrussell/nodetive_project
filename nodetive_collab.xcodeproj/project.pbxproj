@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		077C95892A651D1C007E294D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C95882A651D1C007E294D /* NotificationView.swift */; };
+		07B845412A66336100E9246F /* HelpNSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B845402A66336100E9246F /* HelpNSupportView.swift */; };
 		1405004B2A5FE00E00B7A823 /* nodetive_collabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */; };
 		1405004D2A5FE00E00B7A823 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405004C2A5FE00E00B7A823 /* ContentView.swift */; };
 		1405004F2A5FE01000B7A823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405004E2A5FE01000B7A823 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		077C95882A651D1C007E294D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		07B845402A66336100E9246F /* HelpNSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpNSupportView.swift; sourceTree = "<group>"; };
 		140500472A5FE00E00B7A823 /* nodetive_collab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nodetive_collab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1405004A2A5FE00E00B7A823 /* nodetive_collabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nodetive_collabApp.swift; sourceTree = "<group>"; };
 		1405004C2A5FE00E00B7A823 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				077C95882A651D1C007E294D /* NotificationView.swift */,
 				1D0E84812A623C8400A7AD08 /* OverviewNoQuizView.swift */,
 				1D0E84852A623D6400A7AD08 /* OverviewAfterQuizView.swift */,
+				07B845402A66336100E9246F /* HelpNSupportView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				59A0F7852A6046120026527D /* OverlayView.swift in Sources */,
 				59DA0CA22A65308F00FF4093 /* AddTodayScheduleView.swift in Sources */,
 				5B5EF74D2A6556A1009B1069 /* SignInView.swift in Sources */,
+				07B845412A66336100E9246F /* HelpNSupportView.swift in Sources */,
 				5B31FE182A61DBB000C69A5B /* PersonalDataPage.swift in Sources */,
 				59DA0CA72A6639FE00FF4093 /* PersistenceController.swift in Sources */,
 				285590D22A6006A1006D99C9 /* IntroView.swift in Sources */,
