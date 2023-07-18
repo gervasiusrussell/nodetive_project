@@ -60,7 +60,7 @@ struct ReenterPasswordSecureField: View {
 
 struct SignUpView: View {
     @State var username: String = ""
-    @State private var isSelected = false
+    @State private var isSelected = true
     @State private var isSelected2 = false
     @State private var birthDate = Date.now
     @State var phonenumber: String = ""

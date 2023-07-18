@@ -11,7 +11,7 @@ struct OverlayView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     
     @State var descriptionDescription: String = ""
-    @State private var isSelected = false
+    @State private var isSelected = true
     @State private var isSelected2 = false
     @State private var currentDate = Date()
     @State private var currentDate1 = Date()
