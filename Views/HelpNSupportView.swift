@@ -37,9 +37,9 @@ struct HelpNSupportView: View {
                 Button(action: {
                     
                 }) {
-                    Image(systemName: "arrowtriangle.forward")
+                    Image(systemName: "chevron.right")
                         .resizable()
-                        .frame(width: 25, height: 25)
+                        .frame(width: 22, height: 28)
                         .foregroundColor(.black)
                 }
             }
@@ -58,9 +58,9 @@ struct HelpNSupportView: View {
                 Button(action: {
                     
                 }) {
-                    Image(systemName: "arrowtriangle.forward")
+                    Image(systemName: "chevron.right")
                         .resizable()
-                        .frame(width: 25, height: 25)
+                        .frame(width: 22, height: 28)
                         .foregroundColor(.black)
                 }
             }
@@ -79,9 +79,9 @@ struct HelpNSupportView: View {
                 Button(action: {
                     
                 }) {
-                    Image(systemName: "arrowtriangle.forward")
+                    Image(systemName: "chevron.right")
                         .resizable()
-                        .frame(width: 25, height: 25)
+                        .frame(width: 22, height: 28)
                         .foregroundColor(.black)
                 }
             }
