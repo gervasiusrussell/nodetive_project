@@ -62,7 +62,7 @@ struct ProfileView: View {
                         Spacer()
                             .frame(width: 164, height: 0)
                         NavigationLink{
-                            IntroView()
+                            SettingsView()
                         } label:{
                             Image(systemName: "arrow.forward")
                                 .resizable()
@@ -136,7 +136,7 @@ struct ProfileView: View {
                     Spacer()
                         .frame(width: 106, height: 0)
                     NavigationLink{
-                        IntroView()
+                        HelpNSupportView()
                     } label:{
                         Image(systemName: "arrow.forward")
                             .resizable()
