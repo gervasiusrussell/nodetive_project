@@ -74,17 +74,6 @@ struct OverlayView: View {
                        )
             }
             
-//            if isDatePickerVisible {
-//                            DatePicker("", selection: $currentTime, displayedComponents: .date)
-//                                .datePickerStyle(.compact)
-//                                .labelsHidden()
-//                    .padding(.top, 20)
-//                }
-//                
-//                func showDatePicker() {
-//                    isDatePickerVisible.toggle()
-//                }
-            
             Spacer()
                 .frame(width: 0, height: 40)
             
@@ -197,7 +186,7 @@ struct OverlayView: View {
                 VStack{
                     Button(action:{
                         let schedule = Schedule(context: managedObjectContext)
-                        schedule.date = Date()
+                        schedule.date = selectedDate
                         schedule.startTime = currentDate
                         schedule.endTime = currentDate1
                         schedule.category = category
@@ -240,4 +229,5 @@ struct OverlayView_Previews: PreviewProvider {
         OverlayView()
     }
 }
+
 

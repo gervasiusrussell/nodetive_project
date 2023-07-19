@@ -25,7 +25,7 @@ struct OverviewNoQuizView: View {
                 }) {
                     NavigationLink { QuestionView() } label: {
                         Text("Go to Quiz")
-//                            .toolbar(.hidden, for: .tabBar)
+                            .toolbar(.hidden, for: .tabBar)
                             .font(.body)
                             .fontWeight(.bold)
                             .foregroundColor(Color.black)

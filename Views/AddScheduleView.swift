@@ -12,6 +12,11 @@ struct AddScheduleView: View {
         SortDescriptor(\.startTime)
     ]) var schedules: FetchedResults<Schedule>
     
+    let today = Date()
+    let formatter1 = DateFormatter()
+    func formatter1.dateStyle = .short
+    print(formatter1.string(from: today))
+    
     @State private var isSheetPresented = false
     var body: some View {
         NavigationView{
@@ -69,17 +74,17 @@ struct AddScheduleView: View {
                         .stroke(Color.black, lineWidth: 2)
                 )
                 
-                VStack {
-                    ScrollView {
-                        ForEach(schedules, id:\.self){ schedule in
-                            ScheduleView(bgColor: .black, date: "a", time: "b", desc: "c")
-                            //                            VStack {
-                            //                                Text(schedule.descSch ?? "unknown")
-                            //                                Text(schedule.date?.description ?? "unknown")
-                            //                            }.background(schedule.category == "Productivity" ? .green : .pink)
-                        }
-                    }
-                }
+//                VStack {
+//                    ScrollView {
+//                        ForEach(schedules, id:\.self){ schedule in
+//                            ScheduleView(bgColor: .black, date: schedule.date, time: schedule.startTime, desc: schedule.descSch)
+//                            //                            VStack {
+//                            //                                Text(schedule.descSch ?? "unknown")
+//                            //                                Text(schedule.date?.description ?? "unknown")
+//                            //                            }.background(schedule.category == "Productivity" ? .green : .pink)
+//                        }
+//                    }
+//                }
                     .sheet(isPresented: $isSheetPresented) {
                         OverlayView()
                             .presentationDetents([.height (800)])
