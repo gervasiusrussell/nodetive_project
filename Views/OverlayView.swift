@@ -18,6 +18,9 @@ struct OverlayView: View {
     @State var category = ""
     @State private var currentTime = Date()
     @State private var isDatePickerVisible = false
+    @State private var selectedDate = Date()
+    @State private var isDatePickersVisible = false
+    
     
 
     func getCurrentTime() -> String{
@@ -41,9 +44,9 @@ struct OverlayView: View {
             
             HStack{
                 Button(action: {
-                    
+                    isDatePickersVisible.toggle()
                 }) {
-                    Text(currentTime)
+                    Text(datePickerLabel(for: selectedDate))
                         .foregroundColor(.black)
                         .font(.system(size: 16))
                         .padding(.trailing, 230.0)
@@ -59,17 +62,17 @@ struct OverlayView: View {
                             )
                         )
                 }
+                
+                
+                .sheet(isPresented: $isDatePickersVisible, content: {
+                    DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
+                        .datePickerStyle(.graphical)
+                        .foregroundColor(Color.accentColor)
+                        .padding(.horizontal)
+                
+                }
+                       )
             }
-//            if isDatePickerVisible {
-//                            DatePicker("", selection: $currentTime, displayedComponents: .date)
-//                                .datePickerStyle(.compact)
-//                                .labelsHidden()
-//                    .padding(.top, 20)
-//                }
-//                
-//                func showDatePicker() {
-//                    isDatePickerVisible.toggle()
-//                }
             
             Spacer()
                 .frame(width: 0, height: 40)
@@ -183,7 +186,7 @@ struct OverlayView: View {
                 VStack{
                     Button(action:{
                         let schedule = Schedule(context: managedObjectContext)
-                        schedule.date = Date()
+                        schedule.date = selectedDate
                         schedule.startTime = currentDate
                         schedule.endTime = currentDate1
                         schedule.category = category
@@ -215,10 +218,16 @@ struct OverlayView: View {
         }
     }
 }
+private func datePickerLabel(for date: Date) -> String {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    return formatter.string(from: date)}
+
 
 struct OverlayView_Previews: PreviewProvider {
     static var previews: some View {
         OverlayView()
     }
 }
+
 

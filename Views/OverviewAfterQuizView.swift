@@ -79,6 +79,8 @@ struct OverviewAfterQuizView: View {
                         }
                     )
             }
+            Spacer()
+                .frame(height: 60)
         }
     }
 }
