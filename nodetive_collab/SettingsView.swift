@@ -22,17 +22,17 @@ struct SettingsView: View {
             VStack {
                 Group{
                     HStack {
-                        Button(action: {
-                            
-                        }) {
-                            Image(systemName: "arrowshape.backward")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(.black)
-                        }
+//                        Button(action: {
+//
+//                        }) {
+//                            Image(systemName: "arrowshape.backward")
+//                                .resizable()
+//                                .frame(width: 30, height: 30)
+//                                .foregroundColor(.black)
+//                        }
                         
                         Spacer()
-                            .frame(width: 120)
+//                            .frame(width: 120)
                         
                         Text("Settings")
                             .fontWeight(.regular)

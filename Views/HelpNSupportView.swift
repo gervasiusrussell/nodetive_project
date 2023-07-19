@@ -11,14 +11,14 @@ struct HelpNSupportView: View {
     var body: some View {
         VStack {
             HStack {
-                Button(action: {
-                    
-                }) {
-                    Image(systemName: "arrowshape.backward")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(.black)
-                }
+//                Button(action: {
+//                    
+//                }) {
+//                    Image(systemName: "arrowshape.backward")
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .foregroundColor(.black)
+//                }
                 
                 Spacer()
                 
