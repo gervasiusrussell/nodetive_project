@@ -183,12 +183,12 @@
 			children = (
 				59A0F78A2A60464F0026527D /* AddScheduleView.swift */,
 				59A0F7842A6046120026527D /* OverlayView.swift */,
+				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				59DA0CA12A65308F00FF4093 /* AddTodayScheduleView.swift */,
 				5BD8B55C2A5FE8F2005E7EFD /* CalendarView.swift */,
 				285590D12A6006A1006D99C9 /* IntroView.swift */,
 				5B5EF7462A654D57009B1069 /* SignUpView.swift */,
 				5B5EF74C2A6556A1009B1069 /* SignInView.swift */,
-				59A0F7862A6046210026527D /* ScheduleView.swift */,
 				077C95882A651D1C007E294D /* NotificationView.swift */,
 				1D0E84812A623C8400A7AD08 /* OverviewNoQuizView.swift */,
 				1D0E84852A623D6400A7AD08 /* OverviewAfterQuizView.swift */,

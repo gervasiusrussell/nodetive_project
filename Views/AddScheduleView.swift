@@ -8,31 +8,36 @@
 import SwiftUI
 
 struct AddScheduleView: View {
+    
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     @FetchRequest(sortDescriptors: [
         SortDescriptor(\.startTime)
     ]) var schedules: FetchedResults<Schedule>
     
-    let today = Date()
-    let formatter1 = DateFormatter()
-    func formatter1.dateStyle = .short
-    print(formatter1.string(from: today))
-    
     @State private var isSheetPresented = false
+    
+    private func datePickerLabel(for date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        return dateFormatter.string(from: date)
+    }
+    
     var body: some View {
         NavigationView{
             VStack {
                 Spacer()
                     .frame(height: 20)
                 HStack {
-                        Button(action:{
-                        }) {
-                            NavigationLink(destination: CalendarView()){
-                                Image(systemName: "arrowshape.backward")
-                                    .padding(.leading)
-                                    .imageScale(.large)
-                                    .foregroundColor(.black)
-                            }
+                    Button(action:{
+                    }) {
+                        NavigationLink(destination: CalendarView()){
+                            Image(systemName: "arrowshape.backward")
+                                .padding(.leading)
+                                .imageScale(.large)
+                                .foregroundColor(.black)
                         }
+                    }
                     Spacer()
                         .frame(width: 20, height: 0)
                     
@@ -73,28 +78,34 @@ struct AddScheduleView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.black, lineWidth: 2)
                 )
-                
-//                VStack {
-//                    ScrollView {
-//                        ForEach(schedules, id:\.self){ schedule in
-//                            ScheduleView(bgColor: .black, date: schedule.date, time: schedule.startTime, desc: schedule.descSch)
-//                            //                            VStack {
-//                            //                                Text(schedule.descSch ?? "unknown")
-//                            //                                Text(schedule.date?.description ?? "unknown")
-//                            //                            }.background(schedule.category == "Productivity" ? .green : .pink)
-//                        }
-//                    }
-//                }
-                    .sheet(isPresented: $isSheetPresented) {
-                        OverlayView()
-                            .presentationDetents([.height (800)])
+                List {
+                    ForEach(schedules, id:\.self){ schedule in
+                        ScheduleView(bgColor: schedule.category! == "Leisure" ?  Color("Leisure 1") : Color("Color3"), selectedDate: datePickerLabel(for: schedule.date!), startTime: "\(schedule.startTime!.formatted(date: .omitted, time: .shortened))", endTime: "\(schedule.endTime!.formatted(date: .omitted, time: .shortened))", desc: schedule.descSch!)
                     }
-                    .padding()
+                    .onDelete(perform: deleteSchedule(at:))
+                    .listRowSeparator(.hidden)
+                }
+                .listStyle(.grouped)
             }
+            
+            .sheet(isPresented: $isSheetPresented) {
+                OverlayView()
+                    .presentationDetents([.height (800)])
+            }
+            .padding()
         }
         .navigationBarBackButtonHidden(true)
     }
+    
+    func deleteSchedule(at offsets: IndexSet) {
+        for index in offsets {
+            let schedule = schedules[index]
+            managedObjectContext.delete(schedule)
+        }
+        try? managedObjectContext.save()
+    }
 }
+
 
 struct AddScheduleView_Previews: PreviewProvider {
     static var previews: some View {
