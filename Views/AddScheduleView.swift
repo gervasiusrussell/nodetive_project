@@ -12,6 +12,7 @@ struct AddScheduleView: View {
     
     @State private var isSheetPresented = false
     var body: some View {
+        naviga
         VStack {
             HStack {
                 Button(action:{
