@@ -18,11 +18,13 @@ struct OverlayView: View {
     @State var category = ""
     @State private var currentTime = Date()
     @State private var isDatePickerVisible = false
-    @State private var selectedDate = Date()
     @State private var isDatePickersVisible = false
+    @State private var selectedDate = Date()
+    
+    //    struct DateView { static var selectedDate = Date()}
     
     
-
+    
     func getCurrentTime() -> String{
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -69,9 +71,9 @@ struct OverlayView: View {
                         .datePickerStyle(.graphical)
                         .foregroundColor(Color.accentColor)
                         .padding(.horizontal)
-                
+                    
                 }
-                       )
+                )
             }
             
             Spacer()
@@ -92,7 +94,7 @@ struct OverlayView: View {
                 Button(action:{
                 }) {
                     DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
-                                .labelsHidden()
+                        .labelsHidden()
                 }
                 
                 Spacer()
@@ -101,7 +103,7 @@ struct OverlayView: View {
                 Button(action:{
                 }) {
                     DatePicker("", selection: $currentDate1, displayedComponents: .hourAndMinute)
-                                .labelsHidden()
+                        .labelsHidden()
                 }
                 
                 Spacer()
@@ -124,7 +126,7 @@ struct OverlayView: View {
                     .onTapGesture {
                         isSelected.toggle()
                         category = "Productivity"
-
+                        
                         if isSelected {
                             isSelected2 = false
                         }
@@ -137,11 +139,11 @@ struct OverlayView: View {
                     .onTapGesture {
                         isSelected2.toggle()
                         category = "Leisure"
-
+                        
                         if isSelected2 {
                             isSelected = false
+                        }
                     }
-                }
                 
                 Spacer()
                     .frame(width: 50, height: 0)
@@ -219,9 +221,10 @@ struct OverlayView: View {
     }
 }
 private func datePickerLabel(for date: Date) -> String {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .medium
-    return formatter.string(from: date)}
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .medium
+    return dateFormatter.string(from: date)
+}
 
 
 struct OverlayView_Previews: PreviewProvider {
