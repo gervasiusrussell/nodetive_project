@@ -15,6 +15,7 @@ struct ScheduleView: View {
     @State var endTime: String
     @State var desc: String
     
+    
     var body: some View {
         ZStack{
             Rectangle()
