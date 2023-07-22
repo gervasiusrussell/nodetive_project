@@ -88,7 +88,7 @@ struct HomeView: View {
                                 
                                 Button(action: {
                                 }) {
-                                    NavigationLink(destination: AddTodayScheduleView()){
+                                    NavigationLink(destination: AddScheduleView()){
                                         Circle()
                                             .frame(width: 100, height:50)
                                             .foregroundColor(.accentColor)
