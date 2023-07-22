@@ -80,6 +80,18 @@ struct HomeView: View {
                     ZStack {
                         Rectangle()
                             .frame(width: 2, height: 300) // Garis timeline
+                        VStack{
+                            RoundedRectangle(cornerRadius: 7)
+                                .frame(width: 30, height: 60)
+                                .foregroundColor( Color ("sleep"))
+                            RoundedRectangle(cornerRadius: 7)
+                                .frame(width: 30, height: 170)
+                                .foregroundColor( Color ("Color2"))
+                            RoundedRectangle(cornerRadius: 7)
+                                .frame(width: 30, height: 60)
+                                .foregroundColor( Color ("sleep"))
+                        }
+                        
                         HStack{
                             Spacer()
                                 .frame(width: 300)
